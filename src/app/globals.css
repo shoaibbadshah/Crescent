@@ -1,0 +1,528 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-slide {
+  height: 70vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c5bcbc;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 106, 116);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc6c6;
+}
+
+@media (max-width: 600px) {
+  .slick-slide {
+    height: 50vh;
+    /* Adjust as needed */
+  }
+}
+
+.dots {
+  text-align: center;
+  
+}
+
+.dots li {
+  display: flex;
+  width: 10px; 
+  height: 10px; 
+  margin: 10px 5px;
+  border-radius: 50%;
+  border: 2px solid #777;
+  cursor: pointer;
+}
+.dots li button::before {
+  display: none;
+}
+
+.dots li.slick-active {
+  background-color: #000; /* Change active dot color */
+}
+
+* {
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.progress-bar {
+  height: 35px;
+  margin-top: 10px;
+  background: #e0e0de;
+  border-radius: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.progress {
+  height: 35px;
+  background: rgb(34, 34, 34);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 1s ease-in-out 0s;
+}
+
+.progress span {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 450px 15px 400px;
+  background-image: repeating-linear-gradient(-21deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(69deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(159deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(249deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px);
+  background-size: 0px 100%, 100% 0px, 0px 100%, 40% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-for-blank {
+  border-color: black;
+  background-image: repeating-linear-gradient(-21deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(69deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(159deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(249deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px);
+  background-size: 0px 100%, 100% 0px, 0px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.blog-font-style {
+  color: #737373;
+}
+
+.grid-item {
+  grid-template-columns: 8ch auto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #737373;
+  font-family: 'Montserrat';
+  padding: 15px;
+  padding-left: 25px;
+  background-image: repeating-linear-gradient(-21deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(69deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(159deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(249deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px);
+  background-size: 1px 100%, 100% 0px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-header {
+  text-align: center;
+}
+
+.grid-title {
+  color: #4b4444;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  padding: 15px;
+  padding-left: 25px;
+
+  background-image: repeating-linear-gradient(-21deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(69deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(159deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px),
+    repeating-linear-gradient(249deg,
+      #706b6b,
+      #706b6b 8px,
+      transparent 8px,
+      transparent 14px,
+      #706b6b 14px);
+  background-size: 0px 100%, 100% 1px, 0px 100%, 100% 0px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.backgroundColor {
+  background: linear-gradient(90deg,
+      #bd7b1f -21.02%,
+      #df2f78 71.74%,
+      #3710c5 154%);
+}
+
+.background-color-experience {
+  background: black;
+}
+
+.hafla-experience {
+  padding: 25px;
+  border-radius: 16px 16px 0px 0px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  font-size: 18px;
+  color: #f5f5f5;
+  letter-spacing: 0.15em;
+}
+
+.typical-experience {
+  padding: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f5f5f5;
+  letter-spacing: 0.15em;
+  border-radius: 16px 16px 0% 0%;
+}
+
+
+.hr-line {
+  height: 3px;
+  width: 60px;
+  border: 0px;
+  background: linear-gradient(50deg,
+      rgb(220, 124, 10) 7.01%,
+      rgb(202, 87, 121) 56.57%,
+      rgb(205, 76, 91) 100.37%);
+}
+
+.circle-about {
+  height: 500px;
+  width: 500px;
+  padding: 10%;
+  padding-left: 16%;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.circle-container {
+  width: 600px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-main {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.circle-text-container {
+  width: 60%;
+  max-width: 70%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 20%;
+  top: 20%;
+  transform-style: preserve-3d;
+}
+
+.about-section-main {
+  background-color: #f5f5f5;
+  padding: 40px 0px;
+}
+
+.font-about {
+  .surface-mobile & {
+    text-align: center;
+    font-family: 'google-basic';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  .surface-web {
+    font-family: 'google-basic';
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #222222;
+  }
+}
+
+.about-text {
+  font-family: 'google-basic';
+  font-style: normal;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #222222;
+
+  .surface-mobile & {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .surface-web & {
+    font-weight: 559;
+    font-size: 19px;
+  }
+}
+
+.about-hafla-text {
+  .surface-mobile & {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222222;
+  }
+
+  .surface-web & {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222222;
+  }
+}
+
+.about-title-hr-border-mobile {
+  margin: auto;
+  width: 46px;
+  height: 4px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+}
+
+.about-title-hr-border {
+  width: 80px;
+  height: 6px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+  margin-top: 8px;
+}
+
+.about-delivery-hr {
+  margin-left: -5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 230px;
+  height: 7px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.img-stretch {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.about-event-start-hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 252px;
+  height: 7px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+}
+
+.about-event-hr-mobile {
+  width: 40%;
+  height: 4px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+}
+
+.about-delivery-start-hr-mobile {
+  width: 30%;
+  height: 4px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+}
+
+.about-event-end-hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 24%;
+  width: 88px;
+  height: 7px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,
+      #de8000 -1.52%,
+      #c85384 71.74%,
+      #d93b00 154%);
+}
+
+/* ===================== */
+/* Add this CSS to your stylesheet */
+
+/* Styles for the wrapper div */
+.slick-dots-wrapper {
+  position: relative; /* Ensure the wrapper is positioned relative to its parent */
+}
+
+/* Styles for the dots */
+.slick-dots {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  width: 100%;
+  text-align: center;
+  z-index: 100; /* Ensure dots are above other content */
+  opacity: 0; /* Initially hide dots */
+  transition: opacity 0.3s; /* Add transition for smooth appearance */
+}
+
+/* Show dots when hovering over the image */
+.slick-dots-wrapper:hover .slick-dots {
+  opacity: 1;
+}
+
+/* Style for individual dot */
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px; /* Adjust spacing between dots */
+  padding: 0;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+/* Style for dot icon */
+.slick-dots li button {
+  font-size: 10px; /* Adjust dot size */
+  opacity: 0.7; /* Adjust dot opacity */
+  border-radius: 50%; /* Make dots circular */
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Style for active dot */
+.slick-dots li.slick-active button {
+  background-color: #000; /* Active dot background color */
+}
